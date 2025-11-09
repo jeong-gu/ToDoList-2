@@ -3,10 +3,8 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 
-import tailwindcss from '@tailwindcss/vite';
-
 
 export default defineConfig(({ mode }) => ({
-base: '/ToDoList-2/',
-plugins: [react()],
+  plugins: [react()],
+  base: mode === 'production' ? '/ToDoList-2/' : '/', // dev/prod 분기
 }))
