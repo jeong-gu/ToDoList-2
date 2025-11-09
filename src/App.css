@@ -1,0 +1,63 @@
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  height: 100vh;                 /* 화면 전체 높이 */
+}
+
+.TodoTemplate {
+  width: min(1000px, 90vw);
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+button {
+  margin: auto 10px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.todo-input {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px;    
+  padding: 8px 10px;
+}
+
+.todo-list {
+  list-style: none; /* 점(•) 제거 */
+  margin: 0;
+  padding: 0;
+}
+
+.todo-item {
+  display: block;
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  background-color: white;
+}
+
+.todo-item span {
+  display: inline-block;
+  width: 300px;
+  min-height: 24px;
+  padding: 4px 8px;
+  box-sizing: border-box;
+}
+.add-btn{
+  border: 1px solid #ccc;
+  border-radius: 6px;    
+  padding: 8px 10px;
+}
+.del-btn {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
